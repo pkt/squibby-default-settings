@@ -1,0 +1,17 @@
+Source: squibby-default-settings
+Section: kde
+Priority: optional
+Maintainer: Pantelis Koukousoulas <pktoss@gmail.com>
+Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.9.2ubuntu14)
+Standards-Version: 3.9.3
+Vcs-Git: git://github.com/squibbylinux/squibby-default-settings.git
+Vcs-Browser: https://github.com/squibbylinux/
+
+Package: squibby-default-settings
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, python, ttf-ubuntu-font-family, libnewt0.52 (>= 0.52.11-2ubuntu7)
+Replaces: kdelibs5-data (<< 4:4.3.90-0ubuntu1)
+Description: Default settings and artwork for the Squibby desktop
+ This package contains the default settings used by Squibby. It also
+ includes artwork and Squibby branding.
